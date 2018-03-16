@@ -31,7 +31,7 @@ namespace FirebasePushClient
 
                 var payload = new
                 {
-                    deviceRegId,
+                    to = deviceRegId,
                     priority = "high",
                     notification = new { title, body }
                 };
